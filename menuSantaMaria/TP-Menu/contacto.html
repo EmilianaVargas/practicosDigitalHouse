@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Contacto</title>
+</head>
+
+<body >
+   <header class="headercontacto">
+        <h1>Pagina de contacto</h1>
+        <a href="carta.html"><h3>Volver al menu</h3></a>
+   </header>
+   <section class="box">
+           <form action="validar.php" method="POST">
+                    <p>
+                        <label><h4>¿De dónde sos?</h4></label><br>
+                        <select name=“pais” value="" placeholder="Selecioná una opción" required>
+                            <option value=“Ar”>Argentina</option>
+                            <option value=“Br”>Brasil</option>
+                            <option value=“Ur”>Uruguay</option>
+                        </select>
+                    </p>
+
+                    <div>
+                        <h4>¿Qué te pareció la iluminación del ambiente?</h4><br>
+                        <input type="checkbox"name="iluminacion" value="acorde">
+                        <label>Muy acorde</label><br>
+                        <input type="checkbox" name="iluminacion" value="a mejorar">
+                        <label>Buena, pero podría mejorar</label><br>
+                        <input type="checkbox"name="iluminacion" value="mala">
+                        <label>Mala</label><br><br>
+                    </div>
+
+                    <div>
+                        <h4>¿Qué tipo de plato fue el que más te gustó?</h4><br>
+                        <input type="checkbox" name="plato" value="entrada">
+                        <label>Entrada</label><br>
+                        <input input type="checkbox" name="plato" value="principal">
+                        <label>Plato principal</label><br>
+                        <input type="checkbox" name="plato" value="postre">
+                        <label>Postre</label><br>
+                        <input type="checkbox" name="plato" value="otros">
+                        <label>Otros</label><br>
+                    </div>
+
+
+                    <p>
+                        <label><h4>¿Recomendarías el lugar?</h4></label><br>
+
+                        <input type="radio" name="recomendarias" value="si">SI
+                        <input type="radio" name="recomendarias" value="no">NO
+                    </p>
+
+                    <p>
+                        <label><h4>¿Porqué?</h4></label><br>
+                        <textarea class="comentarios" name=“comentarios”></textarea>
+                    </p>
+
+                    <p>
+                        <label><h4>Dejanos tus datos y nos pondremos en contacto con vos</h4></label>
+                    </p>
+
+                    <p>
+                        <label for=“nombre-usuario”><h4>Nombre:</h4></label>
+                        <input type=“text” name=“nombre-usuario” id=“nombre-usuario” placeholder="Tu nombre" required>
+                    </p>
+
+                    <p>
+                        <label for=“email”><h4>Email:</h4></label>
+                        <input type=“email” name=“email” id=“email” placeholder="Tu email" required>
+                    </p>
+
+
+                <footer class="footercontacto">
+                        <button class="button1" type=“submit” value="enviar">Enviar</button>
+                        <button class="button2" type=“reset” value="resetear" >Resetear</button>
+                </footer>
+            </form>
+    </section>
+
+
+</body>
+
+</html>
+
+

@@ -1,0 +1,130 @@
+body{
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+header{
+     overflow: hidden;
+     height: 150px
+
+}
+
+.top{
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+nav{
+    display: block;
+    float: left;
+    text-align: right;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding-top: 15px;
+    padding-left: 80%;
+    margin-top: 50px;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+a{
+    text-decoration: none;
+    font-size: 15px;
+    color: gray;
+}
+
+.navegacion{
+    margin-bottom: 15px;
+    border-left: solid 2px black;
+    padding: 0 5px 0 5px;
+    float: left;
+    text-align:right;
+}
+
+.icono-group{
+    float: left;
+    text-align: right;
+    margin-top: 100px;
+    padding-top: 5px;
+    position: absolute;
+    width: 100%;
+    height: 10%;
+}
+
+.icono{
+    color: black;
+    font-size: 20px;
+}
+
+section{
+    margin-top: 50px;
+    width: 70%;
+    overflow: hidden;
+}
+
+
+.section-down {
+    overflow: hidden;
+    width: 100%;
+    padding-left: 10px;
+}
+
+
+#music{
+    display: block;
+    float: left;
+    width: 100%;
+    padding-left: 10px;
+    font-family: Work Sans;
+    font-weight: bold;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+h2{
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+article{
+    display: block;
+    float: left;
+    width: 100%;
+    padding-left: 30px;
+    padding-bottom: 5px;
+}
+
+.linksmusica{
+    display: block;
+    float: left;
+    width: 100%;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+#album{
+    display: block;
+    float: left;
+
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+#primervideo{
+    display: block;
+    float: left;
+    width: 100%;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+#segundovideo{
+    display: block;
+    float: left;
+    width: 100%;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}

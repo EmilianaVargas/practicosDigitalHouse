@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Registro</title>
+</head>
+<body >
+
+    <header>
+        <img class="logo" src="./images/logo.png" alt="logo">
+        <div class="menuIzquierda">
+            <ul id="menu">
+                <li><a href=”#”>SMARTPHONES</a></li>
+                <li><a href=”#”>TABLETS</a></li>
+                <li><a href=”#”>COMPUTADORAS</a></li>
+            </ul>
+        </div>
+        <div class="menuDerecha">
+            <ul id="usuarios">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registro.thml">Registro</a></li>
+            </ul>
+    </div>
+    </header>
+
+    <section class="registro">
+        <form action="validar.php" method="POST">
+           
+            <h1>REGISTRATE</h1>
+
+            <p>
+                <label for=“nombre-usuario”><h3>Nombre:</h3></label>
+                <input type=“text” name=“nombre-usuario” id=“nombre-usuario” placeholder="Ingresa tu nombre" required>
+                <h6>Obligatorio</h6>
+            </p>
+
+            <p>
+                <label for=“email”><h3>Email:</h3></label>
+                <input type=“email” name=“email” id=“email” placeholder="Ingresá tu email" required>
+                <h6>Obligatorio</h6>
+            </p>
+
+            <p>
+                <label for=“password”><h3>Contraseña:</h3></label>
+                <input type=“password” name=“password” id=“password” placeholder="password" required>
+                <h6>Obligatorio</h6>
+            </p>
+            <p>
+                <label><h3>País de nacimiento</h3></label>
+                <select name=“pais” value="" placeholder="Selecioná una opción" required>
+                    <option value=“Ch”>Chile</option>
+                    <option value=“Ar”>Argentina</option>
+                    <option value=“Br”>Brasil</option>
+                    <option value=“Ur”>Uruguay</option>
+                </select>
+                <h6>Obligatorio</h6>
+            </p>
+
+            <div class="genero">
+                <h3>Género</h3><br>
+                <input type="checkbox" name="genero" value="masculino">
+                <label>Masculino</label><br>
+                <input input type="checkbox" name="genero" value="femenino">
+                <label>Femenino</label><br>
+                <input type="checkbox" name="genero" value="prefieronodecirlo">
+                <label>Prefiero no decirlo</label><br>
+            </div>
+
+            <div class="hobbies">
+                <h3>Hobbies</h3><br>
+                <input type="checkbox"name="hobbies" value="guitarra">
+                <label>guitarra</label><br>
+                <input type="checkbox" name="hobbies" value="futbol">
+                <label>futbol</label><br>
+                <input type="checkbox"name="hobbies" value="tenis">
+                <label>tenis</label><br><br>
+                <input type="checkbox"name="hobbies" value="programacion">
+                <label>programacion</label><br><br>
+            </div>
+
+            <p>
+                <label><h3>Dejános tus comentarios</h3></label><br>
+                <textarea class="comentarios" name="comentarios"></textarea>
+            </p>
+            <p class="terminosyc">
+                <input type="checkbox"name="tyc" value="tyc">
+                <label>Acepto los términos y condiciones</label><br>
+            </p>
+            
+
+            <footer class="footerregistro">
+                    <button class="button1" type=“submit” value="registrarme">Registrarme</button>
+                    <button class="button2" type=“button” value="cancelar">Cancelar</button>
+            </footer>
+        </form>
+    </section>
+</body>
+</html>

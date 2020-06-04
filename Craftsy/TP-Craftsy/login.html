@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Login</title>
+</head>
+<body>
+    
+
+    <header>
+        <img class="logo" src="./images/logo.png" alt="logo">
+        <div class="menuIzquierda">
+            <ul id="menu">
+                <li><a href=”#”>SMARTPHONES</a></li>
+                <li><a href=”#”>TABLETS</a></li>
+                <li><a href=”#”>COMPUTADORAS</a></li>
+            </ul>
+        </div>
+        <div class="menuDerecha">
+            <ul id="usuarios">
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ul>
+    </div>
+    </header>
+
+<section  class="sectionLogin">
+    <form  class="formlogin" action="/login" method="POST">
+        <h1>BIENVENIDO</h1>
+
+        <p>
+            <label for=“email”><h3>Email:</h3></label>
+            <input type=“email” name=“email” id=“email” placeholder="Ingresá tu email" required>
+        </p>
+
+        <p>
+            <label for=“password”><h3>Contraseña:</h3></label>
+            <input type=“password” name=“password” id=“password” placeholder="password" required>
+        </p>
+        <p class="loginRecordame">
+            <input class="login" type="checkbox"name="recordarme" value="recordarme">
+            <label class="login">Recordarme</label>
+        </p>
+        <p class="validacion">La combinación ingresada de email y contraseña no es valida</p>
+        
+        <footer class="ingresar">
+            <button  type=“submit” value="ingresar">Ingresar</button>
+        </footer>
+
+
+    </form>
+</section>
+
+
+
+</body>
+</html>
