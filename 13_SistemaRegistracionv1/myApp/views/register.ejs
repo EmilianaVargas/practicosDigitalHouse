@@ -1,0 +1,36 @@
+<!-- head -->
+<%- include('./partials/head') %>
+<!-- header -->
+<%- include('./partials/header') %>
+<body class="container">
+    <% if (typeof errors != 'undefined') { %>
+        <div class="alert alert-danger" role="alert">
+            <p><%= errors %></p>
+        </div>
+    <% } %>
+    <!-- Inicio Formulario de Registro de usario-->
+    <div class ="container body-form">
+        <h3>Formulario de Registro</h3></br>
+        <form action="/users/register " method="post" autocomplete="off" enctype="multipart/form-data">  
+            <div class= "container col-md-6 col-lg-6">
+                <input type="text" name="nombre" class="form-control" placeholder="Nombre: "></br> 
+                <input type="text" name="apellido" class="form-control" placeholder="Apellido:"></br>
+                <input type="email" class="form-control" name="email" placeholder="Email :" id="email" required><br>
+                <input type="password" id="password" name="password" class="form-control" placeholder="******" required><br>
+                <input type="password" id="password2" name="password2" class="form-control" placeholder="Repetir contraseña" required>
+            </div>
+            <br>
+            <div class="container-fluid col-md-6 col-lg-6">
+                <label for="avatar">Imagen de Perfil</label><br>
+                <input class="btn btn-secondary" type="file" name="avatar" accept=".jpg, .jpeg, .png"><br><br><br><br><br>
+            </div>
+            <div class = "container-fluid col-md-6 col-lg-6">
+                <button class="btn btn-secondary" id="registrarme" type="submit">Registrame</button>
+                <button class="btn btn-secondary"  id="borrar" type="reset">Borrar</button>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- Fin Formulario de Registro de Usuario -->
+</body>
+</html>

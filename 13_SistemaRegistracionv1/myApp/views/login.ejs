@@ -1,0 +1,26 @@
+<!-- head -->
+<%- include('./partials/head') %>
+<!-- header -->
+<%- include('./partials/header') %>
+<body class="container">
+    <!-- Inicio Formulario de Registro de login-->
+    <div class ="container body-form">
+        <h3>Login</h3></br>
+        <% if (typeof title != 'undefined') { %>
+            <div>
+                <%= title %>
+            </div>
+        <% } %>
+        <form action="/users/login" method="post" autocomplete="off">
+            <div class= "container col-md-6 col-lg-6">
+                <input type="email" class="form-control" name="email" placeholder="Email :" id="email" required><br>
+                <input type="password" id="password" name="password" class="form-control" placeholder="******" required><br>
+            </div>
+                <button class="btn btn-secondary" id="ingresar" type="submit">Ingresar</button>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- Fin Formulario de Registro de Login -->
+</body>
+</html>
