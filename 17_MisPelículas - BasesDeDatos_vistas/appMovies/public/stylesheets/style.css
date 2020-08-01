@@ -1,0 +1,25 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(226, 212, 210);
+}
+
+a {
+  color:rgb(26, 129, 115);
+}
+
+button{
+  background-color: silver;
+  color: darkslategray;
+  font-size: 1rem;
+  border-radius: 3px;
+}
+input{
+  background-color: rgb(223, 240, 237);
+  color: rgb(2, 34, 34);
+  border-radius: 3px;
+}
+select{
+  background-color: honeydew;
+  color: rgb(39, 18, 18);
+}

@@ -1,0 +1,15 @@
+<%- include('./partials/head') %>
+<body>
+<h2>Películas premiadas:</h2>
+    <ul>
+        <% for (let i=0; i< peliculas.length; i++){ %>
+            <li>
+                <a href="/movies/detail/<%= peliculas[i].id %> ">
+                <%= peliculas[i].title %> <h5> Premios ganados:<%= peliculas[i].awards%>  </h5> 
+                </a>
+            </li>
+        <% } %> 
+    </ul>
+
+</body>
+<%- include('./partials/footer') %>

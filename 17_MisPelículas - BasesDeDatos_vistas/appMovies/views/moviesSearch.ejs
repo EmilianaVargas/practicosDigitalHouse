@@ -1,0 +1,21 @@
+<%- include('./partials/head') %>
+<body>
+<h2>Podes ordenar el resultado de tu busqueda desde el siguiente boton:</h2>
+<form action="" method="GET">
+    <select name="order">
+        <option  value=“ASC”>Ascendente</option>
+        <option  value=“DESC”>Descendente</option>
+    </select>
+</form>
+    <ul>
+        <% for (let i=0; i< peliculas.length; i++){ %>
+            <li>
+                <a href="/movies/detail/<%= peliculas[i].id %> ">
+                <%= peliculas[i].title %> 
+                </a>
+            </li>
+        <% } %> 
+    </ul>
+
+</body>
+<%- include('./partials/footer') %>
