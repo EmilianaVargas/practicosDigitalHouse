@@ -67,7 +67,7 @@ let moviesController = {
             title: req.body.title,
             awards:req.body.awards,
             revenue:req.body.revenue,
-            //release_date:req.body.release_date,
+            release_date:req.body.release_date,
             length:req.body.length,
             genre_id:req.body.genre_id,
             },{
@@ -98,7 +98,11 @@ let moviesController = {
             limit: 10,
         })
         .then(function(peliculas){
-            res.render("moviesSearch",{peliculas:peliculas})
+            if(!peliculas){
+                res.render("moviesSearch",{errors:"No encontramos un título de pelicula con ese dato"})
+            }else{
+                res.render("moviesSearch",{peliculas:peliculas})
+            }
         })
     },
 

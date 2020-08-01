@@ -6,7 +6,14 @@
         <li>Fecha de estreno:<%= pelicula.release_date  %></li>
         <li>Recaudación:<%= pelicula.revenue  %></li>
         <li>Premios:<%= pelicula.awards  %></li>
-        <li>Género:<%= pelicula.genre.name  %></li>
+        <li>Género:
+            <% if(pelicula.genre_id == null){ %>
+                <p>Sin genero definido</p>
+            <% } else { %> 
+             <%= pelicula.genre.name  %>
+            <% } %> 
+        </li>
+
         <li>Actores:
             <ul>
                <% for(let i=0; i < pelicula.actors.length; i++) { %>
