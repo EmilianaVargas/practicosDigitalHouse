@@ -1,0 +1,18 @@
+<%- include('./partials/head') %>
+<%- include('./partials/header') %>
+
+<body>
+<h2>Últimos lanzamientos:</h2>
+    <ul>
+        <% for (let i=0; i< peliculas.length; i++){ %>
+            <li>
+                <a href="/movies/detail/<%= peliculas[i].id %> ">
+                <h5>Título: <%= peliculas[i].title %> </h5>
+                <h6> Fecha de estreno: <%= peliculas[i].release_date %>  </h6> 
+                </a>
+            </li>
+        <% } %> 
+    </ul>
+
+</body>
+<%- include('./partials/footer') %>

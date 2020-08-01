@@ -1,0 +1,56 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: rgb(226, 212, 210);
+  width: 40%;
+  text-align: center;
+  overflow: hidden;
+}
+
+a {
+  color:rgb(26, 129, 115);
+}
+form{
+  width: 80%;
+}
+
+button{
+  background-color: silver;
+  color: darkslategray;
+  font-size: 1rem;
+  border-radius: 3px;
+  width: 100px;
+  margin:10px
+}
+input{
+  background-color: rgb(223, 240, 237);
+  color: rgb(2, 34, 34);
+  border-radius: 3px;
+  width: 90%;
+}
+select{
+  background-color: honeydew;
+  color: rgb(39, 18, 18);
+}
+div{
+  display: flex;
+  justify-content: space-around;
+}
+h1{
+  text-align: center;
+}
+h2{
+  text-align: center;
+}
+.footer{
+  margin-bottom: 10px;
+  margin-top: 200px;
+}
+.index{
+  margin-top: 200px;
+}
+.error{
+  color: darkred;
+  font-size: 1rem;
+  font-weight: bolder;
+}

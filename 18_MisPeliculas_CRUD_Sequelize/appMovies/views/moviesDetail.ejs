@@ -1,0 +1,40 @@
+<%- include('./partials/head') %>
+<%- include('./partials/header') %>
+<body>
+<h2>Detalles de <%= pelicula.title  %></h2>
+    <ul>
+        <li>Duracion: <%= pelicula.length  %></li>
+        <li>Fecha de estreno: <%= pelicula.release_date %></li>
+        <li>Recaudación:<%= pelicula.revenue  %></li>
+        <li>Premios:<%= pelicula.awards  %></li>
+
+        <li>Género:
+            <% if(pelicula.genre_id == null){ %>
+                <p>Sin genero definido</p>
+            <% } else { %> 
+            <a href="/movies/genreDetail/<%= pelicula.genre_id %>"> <%= pelicula.genre.name  %></a>
+            <% } %> 
+        </li>
+
+        <li>Actores:
+            <ul>
+               <% for(let i=0; i < pelicula.actors.length; i++) { %>
+                    <li><a href="/movies/actorDetail/<%= pelicula.actors[i].id %>">
+                        <%= pelicula.actors[i].first_name %>  <%= pelicula.actors[i].last_name %> Rating: <%= pelicula.actors[i].rating %> 
+                    </a></li>
+               <% } console.log(pelicula.genre) %> 
+            </ul>
+        </li>
+
+    </ul>
+
+        <a href="/movies/edit/<%= pelicula.id  %>" >
+            <button type="submit" value="editar"> Modificar </button>
+        </a>
+
+        <form action="/movies/delete/<%= pelicula.id  %>?_method=DELETE" method="POST">
+            <button type="submit" value="borrar"> Eliminar de DB </button>
+        </form>
+
+</body>
+<%- include('./partials/footer') %>

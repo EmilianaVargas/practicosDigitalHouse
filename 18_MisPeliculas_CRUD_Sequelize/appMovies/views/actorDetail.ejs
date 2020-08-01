@@ -1,0 +1,15 @@
+<%- include('./partials/head') %>
+<%- include('./partials/header') %>
+<body>
+<h2><%= actor.first_name %> <%= actor.last_name %></h2>
+<h3>Listado de peliculas en las que participó:</h3>
+            <ul>
+               <% for(let i=0; i < actor.movies.length; i++) { %>
+                    <li>
+                        <%= actor.movies[i].title %> 
+                    </li>
+               <% } %> 
+            </ul>
+
+</body>
+<%- include('./partials/footer') %>

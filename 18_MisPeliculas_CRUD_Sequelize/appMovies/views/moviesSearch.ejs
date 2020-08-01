@@ -1,0 +1,33 @@
+<%- include('./partials/head') %>
+<%- include('./partials/header') %>
+
+<body>
+<h2>Podes ordenar el resultado de tu busqueda desde el siguiente boton:</h2>
+<form action="" method="GET">
+    <% if (typeof errors != 'undefined') { %> 
+         <ul>
+             <% for( let i = 0; i < errors.length; i++ ) { %>
+             <li>
+                 <%= errors[i].msg %> 
+             </li>
+             <% } %>
+         </ul>
+       <% } %>
+   
+    <select name="order">
+        <option  value=“ASC”>Ascendente</option>
+        <option  value=“DESC”>Descendente</option>
+    </select>
+
+    <ul>
+        <% for (let i=0; i< peliculas.length; i++){ %>
+            <li>
+                <a href="/movies/detail/<%= peliculas[i].id %> ">
+                <%= peliculas[i].title %> 
+                </a>
+            </li>
+        <% } %> 
+    </ul>
+</form>
+</body>
+<%- include('./partials/footer') %>
